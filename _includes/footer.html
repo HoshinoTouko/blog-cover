@@ -1,8 +1,8 @@
 <footer id="footer">
-    <!--Footer Button-->
+    <!-- Footer Button
     <div class="container has-text-centered has-background-grey-darker" id="backtotop">
         <a class="has-text-white" onclick="window.scroll(0,0)">BACK TO TOP</a>
-    </div>
+    </div> -->
     <!--Footer Main Section-->
     <div class="has-background-grey-darker">
         <div class="container columns">
@@ -18,7 +18,8 @@
                         <div class="column is-marginless">
                             <h5 class="has-text-grey-lighter">{{site.author-name}}</h5>
                             <div class="content has-text-grey">
-                                <p>{{site.author-about | truncate: 75 }}</p>
+                                <!-- <p>{{site.author-about | truncate: 75 }}</p> -->
+                                <p>{{site.footer-bio}}</p>
                             </div>
                         </div>
                     </div>
@@ -29,26 +30,26 @@
             <div class="column has-text-white">
                 <h3>More Links</h3>
                 {% for sitepage in site.html_pages offset: 4 %}
-                {% unless sitepage.url == '/'  limit: 2 %}
+                <!-- {% unless sitepage.url == '/'  limit: 2 %}
                 <li>
                     <a href="{{sitepage.url | absolute_url}}">{{sitepage.title}}</a>
                 </li>
-                {% endunless %}
+                {% endunless %} -->
                 {% endfor %}
                 <li>
-                    <a target="_blank" href="{{site.url}}{{site.baseurl}}/feed.xml">Subscribe via RSS</a>
+                    <a target="_blank" href="{{site.blog-rss}}">Subscribe to blog via RSS</a>
                 </li>
             </div>
 
             <!--Blog-post Section-->
-            <div class="column has-text-white">
+            <!-- <div class="column has-text-white">
                 <h3>Recent Posts</h3>
                 {% for post in site.posts offset: 0 limit:3 %}
                 <li>
                     <a href="{{post.url | absolute_url}}">{{post.title}}</a>
                 </li>
                 {% endfor %}
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="has-background-black has-text-centered has-text-white" id="credits">
