@@ -1,6 +1,6 @@
 export const siteConfig = {
-    title: "Dr. Touko Hoshino",
-    navTitle: "Dr. Touko - Index",
+    title: "Touko Hoshino",
+    navTitle: "Touko - Index",
     description: "Researcher in computer networks and distributed systems.",
     url: "https://touko.moe/",
     heroImage: "/assets/images/kamakura_coast-min.jpg",
