@@ -21,10 +21,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className="overflow-hidden">
-      <body className={`${outfit.variable} antialiased bg-white dark:bg-gray-950 transition-colors duration-500 overflow-hidden font-outfit`}>
+    <html lang="en" suppressHydrationWarning>
+      <body suppressHydrationWarning className={`${outfit.variable} antialiased bg-white dark:bg-gray-950 transition-colors duration-500 font-outfit`}>
         <Providers>
-          <div className="h-screen w-full relative overflow-hidden flex flex-col">
+          <div className="min-h-screen w-full relative flex flex-col">
             <Sidebar />
             <main className="flex-1 w-full max-w-7xl mx-auto px-6 relative flex flex-col justify-center">
               {/* Subtle background accents */}
